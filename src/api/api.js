@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: import.meta.env.VITE_BACKEND_URL || "https://url-shortener-sb-1-o661.onrender.com",
+    baseURL: import.meta.env.VITE_BACKEND_URL || "https://url-shortener-psx0.onrender.com",
 });
 api.interceptors.request.use((config) => {
     const token = JSON.parse(localStorage.getItem("JWT_TOKEN"));
